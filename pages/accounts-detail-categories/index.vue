@@ -7,7 +7,7 @@
             <v-row dense>
               <v-col cols="12" md="3">
                 <v-text-field
-                  label="Search detail for category"
+                  label="Search"
                   outlined
                   dense
                   clearable

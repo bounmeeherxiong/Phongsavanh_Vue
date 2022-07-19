@@ -1,0 +1,164 @@
+<!-- <template>
+  <div>
+    <section class="w-full flex justify-center items-center my-10">
+      <form class="">
+        <div class="form-group">
+          <label class="text-gray-600 font-semibold text-lg"
+            >Phone Number</label
+          >
+          <div
+            v-for="(input, index) in phoneNumbers"
+            :key="`phoneInput-${index}`"
+            class="input wrapper flex items-center"
+          >
+            <v-text-field
+              v-model="input.phone"
+              outlined
+              dense
+              label="Name Accounts"
+              hide-details="auto"
+            />
+            <!--          Add Svg Icon-->
+            <svg
+              @click="addField(input, phoneNumbers)"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              class="ml-2 cursor-pointer"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                fill="green"
+                d="M11 11V7h2v4h4v2h-4v4h-2v-4H7v-2h4zm1 11C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"
+              />
+            </svg>
+
+            <!--          Remove Svg Icon-->
+            <svg
+              v-show="phoneNumbers.length > 1"
+              @click="removeField(index, phoneNumbers)"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              class="ml-2 cursor-pointer"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                fill="#EC4899"
+                d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9.414l2.828-2.829 1.415 1.415L13.414 12l2.829 2.828-1.415 1.415L12 13.414l-2.828 2.829-1.415-1.415L10.586 12 7.757 9.172l1.415-1.415L12 10.586z"
+              />
+            </svg>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+</template> -->
+
+<script>
+export default {
+  name: "AddRemove",
+  data() {
+    return {
+      phoneNumbers: [{ phone: "" },
+      { phone: "" },
+      { phone: "" }],
+    };
+  },
+  methods: {
+    addField(value, fieldType) {
+      fieldType.push({ value: "" });
+    },
+    removeField(index, fieldType) {
+      fieldType.splice(index, 1);
+    },
+  },
+};
+</script>
+
+
+
+
+<!-- <template>
+  <v-treeview :items="items"></v-treeview>
+</template>
+<script>
+  export default {
+    data: () => ({
+      items: [
+        {
+          id: 1,
+          name: 'Applications1 :',
+          children: [
+            { id: 2, name: 'Calendar : app' },
+            { id: 3, name: 'Chrome : app' },
+            { id: 4, name: 'Webstorm : app' },
+          ],
+        },
+        {
+          id: 5,
+          name: 'Documents :',
+          children: [
+            {
+              id: 6,
+              name: 'vuetify :',
+              children: [
+                {
+                  id: 7,
+                  name: 'src :',
+                  children: [
+                    { id: 8, name: 'index : ts' },
+                    { id: 9, name: 'bootstrap : ts' },
+                  ],
+                },
+              ],
+            },
+            {
+              id: 10,
+              name: 'material2 :',
+              children: [
+                {
+                  id: 11,
+                  name: 'src :',
+                  children: [
+                    { id: 12, name: 'v-btn : ts' },
+                    { id: 13, name: 'v-card : ts' },
+                    { id: 14, name: 'v-window : ts' },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          id: 15,
+          name: 'Downloads :',
+          children: [
+            { id: 16, name: 'October : pdf' },
+            { id: 17, name: 'November : pdf' },
+            { id: 18, name: 'Tutorial : html' },
+          ],
+        },
+        {
+          id: 19,
+          name: 'Videos :',
+          children: [
+            {
+              id: 20,
+              name: 'Tutorials :',
+              children: [
+                { id: 21, name: 'Basic layouts : mp4' },
+                { id: 22, name: 'Advanced techniques : mp4' },
+                { id: 23, name: 'All about app : dir' },
+              ],
+            },
+            { id: 24, name: 'Intro : mov' },
+            { id: 25, name: 'Conference introduction : avi' },
+          ],
+        },
+      ],
+    }),
+  }
+</script> -->

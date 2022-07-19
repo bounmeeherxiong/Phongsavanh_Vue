@@ -7,7 +7,7 @@
             <v-row dense>
               <v-col cols="12" md="3">
                 <v-text-field
-                  label="Search Category"
+                  label="Search"
                   outlined
                   dense
                   clearable
@@ -42,8 +42,10 @@
             <v-btn icon small>
               {{ item.id }}
               <v-icon> mdi-delete </v-icon>
+              <v-icon>mdi-delete</v-icon>
             </v-btn>
           </template>
+
         </v-data-table>
       </v-card-text>
     </v-card>

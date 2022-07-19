@@ -51,21 +51,17 @@
       <v-btn icon color="primary" :to="'/my-profile'">
         <v-icon>mdi-account</v-icon>
       </v-btn>
-
       <!-- Notification list -->
-
       <!-- Logout -->
       <v-btn icon>
         <v-icon>mdi-logout</v-icon>
       </v-btn>
     </v-app-bar>
-
     <v-main>
       <v-container fluid>
         <Nuxt />
       </v-container>
     </v-main>
-
     <v-footer app> </v-footer>
   </v-app>
 </template>
